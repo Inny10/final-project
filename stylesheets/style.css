@@ -1,0 +1,66 @@
+/* display: block = element with a specific id or class takes the full width of its line and starts on a new line */
+
+/* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
+
+/* display: inline-block = element with a specific id or class stays in the same line but width and height can be adjusted */
+
+/* display: flex = element with a specific id or class arranges all elements inside it in a row or column layout, making them line up side by side by default */
+
+/* display: none = element with a specific id or class is completely hidden from view and takes up no space */
+
+/* # = ID = Single use */
+
+/* . = Class = multiple use */
+
+/* * means all elements on the page */
+
+* {
+  line-height: 140%; /* sets space between lines */
+  word-spacing: normal; /* normal space between words */
+}
+
+p {
+  /* This is the font for the paragraphs. The web browser will try Georgia first, then if it does not work, then  it tries Cambria, then if it does not work, it tries any serif font */
+  font-family: Georgia, Cambria, Serif;
+}
+
+h1 {
+  font-size: 3.6rem; /* size of the main heading */
+  text-transform: uppercase; /* makes all letters uppercase */
+  letter-spacing: 0.05em; /* adds space between letters */
+  background-color: #002900; /* green background behind the heading */
+  padding: 30px; /* space inside the heading box */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the heading text */
+}
+
+h2 {
+  font-size: 2.8rem; /* size of h2 headings */
+  letter-spacing: 0.03em; /* small space between letters */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
+  text-transform: uppercase; /* makes all letters uppercase */
+}
+
+h3 {
+  font-size: 2.2rem; /* size of h3 headings */
+  letter-spacing: 0.02em; /* small space between letters */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
+  text-transform: uppercase; /* makes all letters uppercase */
+}
+
+h4 {
+  font-size: 1.8rem; /* size of h4 headings */
+  letter-spacing: 0.01em; /* small space between letters */
+  font-weight: bold; /* text is bolder */
+  font-family:
+    "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
+  text-align: center; /* centers the text */
+  text-transform: uppercase; /* makes all letters uppercase */
+}
