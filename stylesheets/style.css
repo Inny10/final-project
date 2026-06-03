@@ -19,6 +19,15 @@
   word-spacing: normal; /* normal space between words */
 }
 
+html {
+  font-size: 62.5%; /* sets the base font size to 10px (62.5% of the default 16px) for easier rem calculations */
+  background-color: whitesmoke; /* light background color for the whole page */
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 p {
   /* This is the font for the paragraphs. The web browser will try Georgia first, then if it does not work, then  it tries Cambria, then if it does not work, it tries any serif font */
   font-family: Georgia, Cambria, Serif;
@@ -28,11 +37,13 @@ h1 {
   font-size: 3.6rem; /* size of the main heading */
   text-transform: uppercase; /* makes all letters uppercase */
   letter-spacing: 0.05em; /* adds space between letters */
-  background-color: #002900; /* green background behind the heading */
-  padding: 30px; /* space inside the heading box */
   font-family:
     "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
   text-align: center; /* centers the heading text */
+  background-color: #0a0927;
+  margin: 0;
+  padding: 5px 0 0 0; /* top, right, bottom, left */
+  color: whitesmoke;
 }
 
 h2 {
@@ -63,4 +74,60 @@ h4 {
     "Times New Roman", Times, serif; /* tries Times New Roman, then Times, then any serif font */
   text-align: center; /* centers the text */
   text-transform: uppercase; /* makes all letters uppercase */
+}
+
+nav {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+hr {
+  border: none; /* removes default border */
+  height: 7px; /* sets height of the line */
+  background: linear-gradient(to right, #0017aa 50%, #8b003b 50%);
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; /* removes outside space */
+  padding: 0; /* removes inside space */
+  overflow: hidden; /* keeps floated items inside the nav */
+}
+
+nav ul {
+  margin: 0; /* removes default UL margin */
+  padding: 0; /* removes default UL padding */
+  list-style: none; /* removes bullet points on the nav links */
+}
+
+/* Each list item in the nav */
+nav ul li {
+  float: left; /* places items horizontally from left to right */
+  text-transform: uppercase; /* makes nav link text uppercase */
+  padding: 0 15px; /* adds horizontal padding */
+  color: #121212; /* sets text color */
+}
+
+/* The clickable link inside each nav item */
+nav ul li a {
+  display: block; /* makes the link fill the entire list item area */
+  text-decoration: none; /* removes underline from the nav links */
+}
+
+.fa-solid.fa-cart-shopping {
+  color: #121212;
+  font-size: 4rem;
+}
+
+div {
+  float: left;
+}
+
+section {
+  display: flex;
+  gap: 30px;
 }
