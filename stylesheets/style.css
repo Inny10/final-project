@@ -164,37 +164,39 @@ section {
   line-height: 1.4;
 }
 
-.video-wrapper {
+#video-wrapper {
   background: white;
   padding: 40px;
   border-radius: 12px;
   width: 80%;
   margin-bottom: 80px; /* adjust spacing under the white box */
+  float: none;
+  margin: 0 auto;
 }
 
-.gradient-bg {
+#gradient-bg {
   background: linear-gradient(180deg, #491118, #181733);
   padding: 60px 0;
   width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 .app-banner {
-  width: 87%; /* how wide horizontally it becomes */
+  width: 88%; /* how wide horizontally it becomes */
   max-width: 9000px; /* The maximum width it can become */
-  background-image: url("https://assets.goal.com/images/v3/blt8ca5bd15ac808229/crop/MM5DKMBQGQ5DEOBRGU5G433XMU5DAORSGYYQ====/GettyImages-2232509303.jpg?auto=webp&format=pjpg&width=3840&quality=60"); /* put your player image here */
+  background-image: url("https://www.fcbarcelona.com/photo-resources/2019/09/16/f65a0028-03c8-4220-a945-5ff23e7445f6/cabecera_bar-a_fans_GENERICA.jpg?width=1200&height=525");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center; /* center the text */
-  padding: 375px 40px;
+  padding: 300px 40px;
   /* 
-    250px = top + bottom → height
+    340px = top + bottom → height
     40px = left + right → horizontal spacing 
   */
   color: white;
-  border-radius: 12px; /* clean card look */
+  border-radius: 16px; /* clean card look */
   flex-direction: column;
   position: relative;
 }
@@ -203,35 +205,36 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px; /* space before gradient */
+  margin: 70px auto; /* space before gradient */
 }
 
 .banner-content {
   text-align: center; /* centers h2 + p + button horizontally */
   position: relative;
-  top: 350px;
+  top: 280px;
 }
 
 .banner-content h2 {
   margin: 0 0 10px 0;
-  font-size: 4rem;
+  font-size: 3.7rem;
   color: #fdc52c;
 }
 
 .banner-content p {
   margin: 0 0 20px 0;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .button-ios {
   display: inline-block;
   background-color: #cd122d; /* Barça red */
-  padding: 12px 95px;
+  padding: 8px 70px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 2.5px;
   color: whitesmoke;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {
