@@ -237,6 +237,33 @@ section {
   font-size: 1.2rem;
 }
 
+.section-box {
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  border-radius: 3px; /* rounds the corners of the box */
+  padding: 10px; /* adds space inside the box between the content and the border */
+  margin: 20px auto; /* adds space outside the box and centers it horizontally */
+  max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
+  transition:
+    transform 0.29s ease,
+    box-shadow 0.25s ease;
+}
+.section-box h2 {
+  text-align: left;
+  font-size: 2.3rem;
+}
+.section-box p {
+  font-size: 1.4rem;
+}
+
+.section-box:hover {
+  transform: translateY(-10px) scale(1.07); /* moves up + grows */
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5); /* adds a shadow effect */
+}
+
 @media (max-width: 800px) {
   .three-videos {
     flex-direction: column;
