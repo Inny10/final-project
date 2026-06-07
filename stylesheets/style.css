@@ -123,7 +123,7 @@ nav ul li a {
   font-size: 4rem;
 }
 
-div {
+#nav-links {
   float: left;
 }
 
@@ -195,7 +195,7 @@ section {
     340px = top + bottom → height
     40px = left + right → horizontal spacing 
   */
-  color: white;
+  color: #f5f5f5;
   border-radius: 16px; /* clean card look */
   flex-direction: column;
   position: relative;
@@ -239,17 +239,21 @@ section {
 
 .section-box {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
   display: inline-block;
-  width: 50%;
+  width: 55%;
   border-radius: 3px; /* rounds the corners of the box */
-  padding: 10px; /* adds space inside the box between the content and the border */
   margin: 20px auto; /* adds space outside the box and centers it horizontally */
+  margin-left: 0;
   max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
   transition:
     transform 0.29s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    max-height 0.8s ease;
+  max-height: 260px;
+  overflow-y: hidden; /* hides any content that exceeds the max-height */
+  transform-origin: right center; /* anchor on the right side */
 }
 .section-box h2 {
   text-align: left;
@@ -260,16 +264,294 @@ section {
 }
 
 .section-box:hover {
-  transform: translateY(-10px) scale(1.07); /* moves up + grows */
+  transform: scale(1.09); /* grows */
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5); /* adds a shadow effect */
+  /* expanded size */
+  max-height: 900px; /* big enough for all your text */
+}
+
+.container {
+  display: flex;
+  position: relative;
+  gap: 0; /* remove space so white box touches image */
+  padding-left: 15px; /* moves image away from left border */
+  padding-bottom: 40px;
+}
+
+.img-left {
+  border: #121212 3px solid; /* adds a black line on top of the image */
+  border-right: none; /* removes the right border */
+  border-top-left-radius: 90px; /* rounds the top-left corner of the image */
+  border-bottom-right-radius: 90px; /* rounds the bottom-left corner of the image */
+}
+
+.footer {
+  background-color: #181733;
+  background: linear-gradient(180deg, #17244d, #181733 50%);
+  padding: 0 60px;
+  /* padding: top + bottom 0, left + right 60px */
+  font-family: Arial, sans-serif;
+}
+
+/* TOP SECTION */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  width: 250px;
+}
+
+#footer-title {
+  font-size: 2rem;
+  margin: 20px 0 15px 0;
+  color: #f5f5f5;
+  text-transform: uppercase; /* makes all letters uppercase */
+  font-weight: bold; /* text is bolder */
+}
+
+.footer-address {
+  line-height: 1.5;
+  margin-bottom: -50px;
+  color: #f5f5f5;
+}
+
+.footer-socials i {
+  font-size: 3rem;
+  margin-right: 12px;
+}
+
+/* RIGHT SIDE */
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-column h4 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #f5f5f5;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-bottom: 6px;
+  font-size: 1.3rem;
+  color: #f5f5f5;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* BOTTOM SECTION */
+
+.footer-bottom-right {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.footer-links-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 3px; /* spacing between Privacy + Terms */
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.footer-links-row a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+}
+
+.footer-links-row a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-right p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #f5f5f5;
 }
 
 @media (max-width: 800px) {
+  /* NAVIGATION FIX */
+  nav ul li {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* THREE VIDEOS → STACK */
   .three-videos {
     flex-direction: column;
+    gap: 20px;
   }
 
   .video-block {
     width: 100%;
+  }
+
+  .app-banner {
+    width: 79%; /* how wide horizontally it becomes */
+    height: auto; /* allows the height to adjust based on the content */
+    max-width: 9000px; /* The maximum width it can become */
+    background-image: url("https://wallpaperaccess.com/full/483303.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center the text */
+    padding: 300px 40px;
+    color: white;
+    border-radius: 16px; /* clean card look */
+    flex-direction: column;
+    position: relative;
+  }
+
+  .app-banner-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 70px auto; /* space before gradient */
+  }
+
+  .banner-content {
+    text-align: center; /* centers h2 + p + button horizontally */
+    position: relative;
+    top: 280px;
+  }
+
+  .banner-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    color: #fdc52c;
+  }
+
+  .banner-content p {
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .button-ios {
+    display: inline-block;
+    background-color: #cd122d; /* Barça red */
+    padding: 8px 60px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2.5px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+  }
+
+  /* SECTION BOXES → FULL WIDTH */
+  .section-box {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 3px; /* rounds the corners of the box */
+    margin: 20px auto; /* adds space outside the box and centers it horizontally */
+    width: auto;
+    max-width: 410px; /* limits the width of the box to prevent it from being too wide on large screens */
+    transition:
+      transform 0.29s ease,
+      box-shadow 0.25s ease,
+      max-height 0.8s ease;
+    max-height: 260px;
+    overflow-y: hidden; /* hides any content that exceeds the max-height */
+  }
+  .section-box h2 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .section-box p {
+    font-size: 1.3rem;
+  }
+
+  .section-box:hover {
+    transform: scaleY(1.08); /* grows */
+    box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5); /* adds a shadow effect */
+    /* expanded size */
+    max-height: 1200px; /* big enough for all your text */
+  }
+
+  .section-box:hover h2 {
+    font-size: 2.2rem;
+  }
+  .section-box:hover p {
+    font-size: 1.5rem;
+  }
+
+  .img-left {
+    border: #121212 3px solid; /* adds a black line on top of the image */
+    border-right: none; /* removes the right border */
+    border-top-left-radius: 90px; /* rounds the top-left corner of the image */
+    border-bottom-right-radius: 90px; /* rounds the bottom-left corner of the image */
+    width: auto;
+    max-width: 430px; /* limits the width of the image to prevent it from being too wide on large screens */
+  }
+
+  .container {
+    float: none;
+    display: block;
+    position: relative;
+    gap: 0; /* remove space so white box touches image */
+    padding-bottom: 40px;
+    margin-right: 10px;
+    margin: 0 auto; /* centers it */
+  }
+
+  /* FOOTER TOP → STACK COLUMNS */
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-column h4 {
+    margin-top: 3px;
+    font-size: 1.8rem;
+    color: #121212;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* FOOTER BOTTOM RIGHT → CENTER ON SMALL SCREENS */
+  .footer-bottom-right {
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .footer-links-row {
+    gap: 20px;
+  }
+
+  .footer-links-row a {
+    text-decoration: none;
+    color: #121212;
+    font-size: 1.2rem;
+  }
+
+  .footer-links-row a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom-right p {
+    margin-top: 10px;
+    color: #121212;
+    font-size: 1.5rem;
   }
 }
