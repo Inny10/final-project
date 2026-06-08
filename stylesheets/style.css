@@ -41,7 +41,7 @@ h1 {
   text-align: center; /* centers the heading text */
   background-color: #0a0927;
   margin: 0;
-  padding: 5px 0 0 0; /* top, right, bottom, left */
+  padding-top: 5px;
   color: whitesmoke;
 }
 
@@ -75,9 +75,21 @@ h4 {
   text-transform: uppercase; /* makes all letters uppercase */
 }
 
-nav {
+#nav-wrapper {
   background-color: whitesmoke;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+nav {
   padding: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; /* removes outside space */
+  padding: 0; /* removes inside space */
+  overflow: hidden; /* keeps floated items inside the nav */
 }
 
 hr {
@@ -88,27 +100,22 @@ hr {
   margin-bottom: 0;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0; /* removes outside space */
-  padding: 0; /* removes inside space */
-  overflow: hidden; /* keeps floated items inside the nav */
-}
-
 nav ul {
   margin: 0; /* removes default UL margin */
   padding: 0; /* removes default UL padding */
   list-style: none; /* removes bullet points on the nav links */
+  width: 80%;
+}
+
+nav ul :hover {
+  color: #121212;
 }
 
 /* Each list item in the nav */
 nav ul li {
   float: left; /* places items horizontally from left to right */
   text-transform: uppercase; /* makes nav link text uppercase */
-  padding: 0 15px; /* adds horizontal padding */
+  padding: 0% 1.5%; /* adds horizontal padding */
   color: #121212; /* sets text color */
 }
 
@@ -116,6 +123,7 @@ nav ul li {
 nav ul li a {
   display: block; /* makes the link fill the entire list item area */
   text-decoration: none; /* removes underline from the nav links */
+  margin-left: 7%;
 }
 
 .fa-solid.fa-cart-shopping {
@@ -123,19 +131,15 @@ nav ul li a {
   font-size: 4rem;
 }
 
-#nav-links {
-  float: left;
-}
-
 section {
   display: flex;
-  gap: 30px;
+  gap: 1%; /* Distance in the Nav between the barcelona logo and the nav links */
 }
 
 .three-videos {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 3%; /* Distance between the three vidoes */
   margin-top: 40px;
 }
 
@@ -154,7 +158,7 @@ section {
 
 /* Title under each video */
 .video-block h4 {
-  margin: 12px 0 6px 0;
+  margin: 6px 0% 4% 0%;
 }
 
 /* Description text */
@@ -166,7 +170,7 @@ section {
 
 #video-wrapper {
   background: white;
-  padding: 40px;
+  padding: 1% 3% 2% 3%;
   border-radius: 12px;
   width: 80%;
   margin-bottom: 80px; /* adjust spacing under the white box */
@@ -183,17 +187,17 @@ section {
 
 .app-banner {
   width: 88%; /* how wide horizontally it becomes */
-  max-width: 9000px; /* The maximum width it can become */
+  max-width: 95%; /* The maximum width it can become */
   background-image: url("https://www.fcbarcelona.com/photo-resources/2019/09/16/f65a0028-03c8-4220-a945-5ff23e7445f6/cabecera_bar-a_fans_GENERICA.jpg?width=1200&height=525");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center; /* center the text */
-  padding: 300px 40px;
+  padding: 21% 5%;
   /* 
-    340px = top + bottom → height
-    40px = left + right → horizontal spacing 
+    21% = top + bottom → height
+    5% = left + right → horizontal spacing 
   */
   color: #f5f5f5;
   border-radius: 16px; /* clean card look */
@@ -215,13 +219,15 @@ section {
 }
 
 .banner-content h2 {
-  margin: 0 0 10px 0;
+  margin-bottom: 5px;
+  margin-top: 0%;
   font-size: 3.7rem;
   color: #fdc52c;
 }
 
 .banner-content p {
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
+  margin-top: 0%;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -229,7 +235,7 @@ section {
 .button-ios {
   display: inline-block;
   background-color: #cd122d; /* Barça red */
-  padding: 8px 70px;
+  padding: 0.9% 11%;
   text-decoration: none;
   font-weight: bold;
   border-radius: 2.5px;
@@ -238,15 +244,14 @@ section {
 }
 
 .section-box {
-  background-color: white;
-  padding: 10px;
+  background-color: #f5f5f5;
+  padding: 1.5%;
   text-align: left;
   display: inline-block;
-  width: 55%;
+  width: auto;
   border-radius: 3px; /* rounds the corners of the box */
-  margin: 20px auto; /* adds space outside the box and centers it horizontally */
-  margin-left: 0;
-  max-width: 1000px; /* limits the width of the box to prevent it from being too wide on large screens */
+  margin: 1% 0%; /* adds space outside the box and centers it horizontally */
+  max-width: 95%; /* limits the width of the box to prevent it from being too wide on large screens */
   transition:
     transform 0.29s ease,
     box-shadow 0.25s ease,
@@ -274,7 +279,8 @@ section {
   display: flex;
   position: relative;
   gap: 0; /* remove space so white box touches image */
-  padding-left: 15px; /* moves image away from left border */
+  padding-left: 1.2%; /* How much space is at the edge of the image and the etxt box on the left */
+  padding-right: 1.2%; /* How much space is at the edge of the image and the etxt box on the right */
   padding-bottom: 40px;
 }
 
@@ -288,7 +294,7 @@ section {
 .footer {
   background-color: #181733;
   background: linear-gradient(180deg, #17244d, #181733 50%);
-  padding: 0 60px;
+  padding: 0 2%;
   /* padding: top + bottom 0, left + right 60px */
   font-family: Arial, sans-serif;
 }
@@ -298,17 +304,17 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
+  gap: 1%;
 }
 
 /* LEFT SIDE */
 .footer-left {
-  width: 250px;
+  width: 65%;
 }
 
 #footer-title {
-  font-size: 2rem;
-  margin: 20px 0 15px 0;
+  font-size: 2.5rem;
+  margin: 1.5% 0% 1.2% 0%;
   color: #f5f5f5;
   text-transform: uppercase; /* makes all letters uppercase */
   font-weight: bold; /* text is bolder */
@@ -316,24 +322,28 @@ section {
 
 .footer-address {
   line-height: 1.5;
-  margin-bottom: -50px;
+  margin-bottom: -60px;
+  margin-top: -2%;
   color: #f5f5f5;
 }
 
 .footer-socials i {
   font-size: 3rem;
-  margin-right: 12px;
+  margin-right: 2%;
 }
 
 /* RIGHT SIDE */
 .footer-right {
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  gap: 7%;
 }
 
 .footer-column h4 {
   margin-top: 20px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #f5f5f5;
 }
 
@@ -342,7 +352,7 @@ section {
   text-decoration: none;
   margin-top: 7px;
   margin-bottom: 6px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #f5f5f5;
 }
 
@@ -361,9 +371,9 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  gap: 3px; /* spacing between Privacy + Terms */
-  margin-top: -20px;
-  margin-bottom: 10px;
+  gap: 0.2%; /* spacing between Privacy + Terms */
+  margin-top: 1px;
+  margin-bottom: -5px;
 }
 
 .footer-links-row a {
@@ -456,14 +466,15 @@ section {
 
   /* SECTION BOXES → FULL WIDTH */
   .section-box {
-    background-color: white;
+    background-color: #f5f5f5;
     padding: 10px;
     text-align: left;
     display: inline-block;
     border-radius: 3px; /* rounds the corners of the box */
-    margin: 20px auto; /* adds space outside the box and centers it horizontally */
+    margin: 20px 0; /* adds space outside the box and centers it horizontally */
+    margin-right: 15px;
     width: auto;
-    max-width: 410px; /* limits the width of the box to prevent it from being too wide on large screens */
+    max-width: 4500px;
     transition:
       transform 0.29s ease,
       box-shadow 0.25s ease,
@@ -471,6 +482,7 @@ section {
     max-height: 260px;
     overflow-y: hidden; /* hides any content that exceeds the max-height */
   }
+
   .section-box h2 {
     text-align: left;
     font-size: 1.8rem;
@@ -498,8 +510,6 @@ section {
     border-right: none; /* removes the right border */
     border-top-left-radius: 90px; /* rounds the top-left corner of the image */
     border-bottom-right-radius: 90px; /* rounds the bottom-left corner of the image */
-    width: auto;
-    max-width: 430px; /* limits the width of the image to prevent it from being too wide on large screens */
   }
 
   .container {
@@ -521,7 +531,7 @@ section {
   .footer-column h4 {
     margin-top: 3px;
     font-size: 1.8rem;
-    color: #121212;
+    color: #f5f5f5;
   }
 
   .footer-right {
@@ -536,12 +546,12 @@ section {
   }
 
   .footer-links-row {
-    gap: 20px;
+    gap: 3px;
   }
 
   .footer-links-row a {
     text-decoration: none;
-    color: #121212;
+    color: #f5f5f5;
     font-size: 1.2rem;
   }
 
@@ -551,7 +561,7 @@ section {
 
   .footer-bottom-right p {
     margin-top: 10px;
-    color: #121212;
+    color: #f5f5f5;
     font-size: 1.5rem;
   }
 }
