@@ -162,12 +162,12 @@ section {
   flex-direction: column;
   padding-left: 2%;
   padding-right: 2%;
+  transition: 5s;
 }
 
 .three-vidoes-box:hover {
   height: auto;
   max-height: 100%;
-  transition: 5s;
 }
 
 .video-block {
@@ -203,19 +203,13 @@ section {
 }
 
 .app-banner {
-  width: 88%; /* how wide horizontally it becomes */
-  max-width: 95%; /* The maximum width it can become */
+  width: 98%; /* how wide horizontally it becomes */
   background-image: url("https://www.fcbarcelona.com/photo-resources/2019/09/16/f65a0028-03c8-4220-a945-5ff23e7445f6/cabecera_bar-a_fans_GENERICA.jpg?width=1200&height=525");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center; /* center the text */
-  padding: 20% 5%;
-  /* 
-    21% = top + bottom → height
-    5% = left + right → horizontal spacing 
-  */
   color: #f5f5f5;
   border-radius: 16px; /* clean card look */
   flex-direction: column;
@@ -224,15 +218,15 @@ section {
 
 .app-banner-wrapper {
   width: 100%;
-  display: flex;
   justify-content: center;
-  margin: 80px auto; /* space before gradient */
+  margin: 60px 0; /* space before gradient */
 }
 
 .banner-content {
   text-align: center; /* centers h2 + p + button horizontally */
   position: relative;
-  top: 250px;
+  transform: translateY(20%);
+  padding: 20% 5% 20%;
 }
 
 .banner-content h2 {
@@ -475,8 +469,7 @@ section {
 
   .banner-content {
     text-align: center; /* centers h2 + p + button horizontally */
-    position: relative;
-    top: 240px;
+    top: 220px;
   }
 
   .banner-content h2 {
