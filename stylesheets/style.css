@@ -92,6 +92,12 @@ nav {
   overflow: hidden; /* keeps floated items inside the nav */
 }
 
+#disabled {
+  pointer-events: none; /* makes it unclickable */
+  cursor: not-allowed;
+  color: grey;
+}
+
 hr {
   border: none; /* removes default border */
   height: 7px; /* sets height of the line */
@@ -161,8 +167,7 @@ section {
 .three-vidoes-box:hover {
   height: auto;
   max-height: 100%;
-  margin-bottom: 10%;
-  transition: 3s;
+  transition: 5s;
 }
 
 .video-block {
@@ -206,7 +211,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; /* center the text */
-  padding: 21% 5%;
+  padding: 20% 5%;
   /* 
     21% = top + bottom → height
     5% = left + right → horizontal spacing 
@@ -221,13 +226,13 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 70px auto; /* space before gradient */
+  margin: 80px auto; /* space before gradient */
 }
 
 .banner-content {
   text-align: center; /* centers h2 + p + button horizontally */
   position: relative;
-  top: 280px;
+  top: 250px;
 }
 
 .banner-content h2 {
@@ -439,10 +444,6 @@ section {
     margin-top: -10%;
   }
 
-  .three-vidoes-box:hover {
-    margin-bottom: 0;
-  }
-
   .video-block {
     width: 100%;
   }
@@ -458,7 +459,7 @@ section {
     align-items: center;
     justify-content: center; /* center the text */
     padding: 55% 8%;
-    color: white;
+    color: whitesmoke;
     border-radius: 16px; /* clean card look */
     flex-direction: column;
     position: relative;
@@ -600,6 +601,6 @@ section {
     margin-top: 5%;
     color: #f5f5f5;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: right;
   }
 }
