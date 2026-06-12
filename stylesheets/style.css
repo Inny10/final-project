@@ -208,6 +208,7 @@ section {
   background-size: cover;
   background-position: center;
   display: flex;
+  margin-top: 3%;
   align-items: center;
   justify-content: center; /* center the text */
   color: #f5f5f5;
@@ -226,7 +227,7 @@ section {
   text-align: center; /* centers h2 + p + button horizontally */
   position: relative;
   transform: translateY(20%);
-  padding: 20% 5% 20%;
+  padding: 20% 5% 10%;
 }
 
 .banner-content h2 {
@@ -443,16 +444,12 @@ section {
   }
 
   .app-banner {
-    width: 79%; /* how wide horizontally it becomes */
-    height: auto; /* allows the height to adjust based on the content */
-    max-width: 95%; /* The maximum width it can become */
     background-image: url("https://wallpaperaccess.com/full/483303.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center; /* center the text */
-    padding: 55% 8%;
     color: whitesmoke;
     border-radius: 16px; /* clean card look */
     flex-direction: column;
@@ -461,7 +458,6 @@ section {
 
   .app-banner-wrapper {
     width: 100%;
-    display: flex;
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -469,25 +465,30 @@ section {
 
   .banner-content {
     text-align: center; /* centers h2 + p + button horizontally */
-    top: 220px;
+    position: relative;
+    transform: translateY(20%);
+    padding: 40% 5% 19% 5%;
   }
 
   .banner-content h2 {
     margin-bottom: 10px;
-    font-size: 2.2rem;
+    margin-top: 0%;
+    font-size: 2rem;
     color: #fdc52c;
   }
 
   .banner-content p {
-    margin: 0 0 2.5% 0;
-    font-size: 1.3rem;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .button-ios {
     display: inline-block;
     background-color: #cd122d; /* Barça red */
-    padding: 8px 17%;
+    padding: 2% 15%;
+    margin-bottom: 2%;
     text-decoration: none;
     font-weight: bold;
     border-radius: 2.5px;
