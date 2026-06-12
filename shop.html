@@ -11,12 +11,37 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <style>
       h2,
-      h4 {
+      h3 {
         text-align: left;
       }
+
       #shop-bg {
         background-color: whitesmoke;
-        display: grid;
+      }
+
+      .grid-container {
+        display: grid; /* turn on grid layout */
+        grid-template-columns: repeat(4, 1fr); /* 4 columns horizontally */
+        grid-template-rows: repeat(3);
+        gap: 1%; /* space between items */
+      }
+
+      .grid-container img {
+        width: 100%; /* image fits inside its grid cell */
+      }
+
+      .grid-container h4 {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #121212;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+      }
+
+      .product-card {
+        color: black; /* makes text black */
+        text-align: center; /* centers the title under the image */
+        background-color: lightgrey;
       }
     </style>
   </head>
@@ -43,10 +68,10 @@
     </header>
     <hr />
     <main id="shop-bg">
-      <h2>Jerseys</h2>
-      <h4>Retro</h4>
+      <h3>Retro</h3>
       <div class="grid-container">
         <a
+          class="product-card"
           href="https://store.fcbarcelona.com/products/tee-white-1899-legends-barca?variant=55577087181185">
           <img
             src="images/retro_pedri_00671A.webp"
@@ -54,6 +79,7 @@
           <h4>Tee White 1899 Legends Barça</h4>
         </a>
         <a
+          class="product-card"
           href="https://store.fcbarcelona.com/products/tee-grey-1899-culer-kit-barca?variant=55577087017345">
           <img
             src="images/araujo_00140A.webp"
@@ -61,6 +87,7 @@
           <h4>Tee Grey 1899 Culer Kit Barça</h4>
         </a>
         <a
+          class="product-card"
           href="https://store.fcbarcelona.com/products/t-shirt-blaugrana-modernist-125?variant=54019534717313">
           <img
             src="images/Bolet_Baixa-11795.webp"
@@ -68,309 +95,412 @@
           <h4>Modernist FC Barcelona Polo - Oversize</h4>
         </a>
         <a
+          class="product-card"
           href="https://store.fcbarcelona.com/products/tee-retro-spotify-camp-nou?variant=53970020172161">
           <img
             src="images/CORE-II4082_391dac34-f71d-4453-acdc-51b48962fdaf.webp"
             alt="Image of a Retro T-shirt with image of Spotify Camp Nou" />
           <h4>Tee retro Spotify Camp Nou</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/track-jacket-1899?variant=47578527170899">
+          <img
+            src="images/PLAYERS_DAY_RETRO_0252.webp"
+            alt="Image of Retro FC Barcelona Jacket from 1899" />
+          <h4>Jacket FC Barcelona 1899 Vintage</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fcb-1995-97-away?variant=48743033241939">
+          <img
+            src="images/IMG_6274.webp"
+            alt="Image of a 1995-1997 FC Barcelona Season Jersey" />
+          <h4>1995-97's Season Jersey</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/retro-blaugrana-fcbarcelona-x-or-03-04?variant=55565082952065">
+          <img
+            src="images/GP25293.webp"
+            alt="Image of  a Retro Nike 2003/04 FC Barcelona x Olivia Rodrigo x Spotify Jersey" />
+          <h4>BARÇA X OLIVIA RODRIGO</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/jersey-retro-1990-92-away-fc-barcelona?variant=55037661544833">
+          <img
+            src="images/IMG_5523.webp"
+            alt="Image of a Retro 1990-92 Away FC Barcelona Jersey" />
+          <h4>Jersey Retro 1990-92 Away FC Barcelona</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/crew-retro-1899-turquoise-barca?variant=54963315999105">
+          <img
+            src="images/Retro_Players_Baixa-7928.webp"
+            alt="Image of a Crew Retro 1899 Turquoise Barça long sleeve top" />
+          <h4>Crew Retro 1899 Turquoise Barça</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/1899-m-ecru-half-zip-fleece?variant=48681520300371">
+          <img
+            src="images/IMG_7943.webp"
+            alt="Image of a FC Barcelona Retro Sweatshirt from 1899" />
+          <h4>Sweatshirt Retro 1899</h4>
+        </a>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/1899-retro-home-kit-shirt-long-sleeves?variant=44647701578007">
+          <img
+            src="images/araujo.webp"
+            alt="Araujo wearing a 1899 Retro FC Bareclona Home Jersey" />
+          <h4>1899 Retro Home Kit Jersey- Long Sleeves</h4>
+        </a>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-historic-ball?variant=44647601078551">
+          <img
+            src="images/PLAYERS_DAY_RETRO_0388 (1).webp"
+            alt="Image of a Historic FC Barcelona Ball" />
+          <h4>FC Barcelona Historic Ball</h4>
         </a>
       </div>
-      <h4>Training</h4>
+      <h3>Training</h3>
       <div class="grid-container">
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/t-shirt-laliga-winners-2026-barca?variant=55579747385729">
+          <img
+            src="images/IMG_5188_Easy-Resize.com.webp"
+            alt="Image of Laliga winner T-Shirt" />
+          <h4>LALIGA WINNERS OFFICIAL TEE</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-pre-match-away-shirt-25-26?variant=54421957149057">
+          <img
+            src="images/VO250731A23796_med.webp"
+            alt="Image of FC Barcelona Pre match away shirt 25/26" />
+          <h4>FC Barcelona x Kobe Bryant Pre-Match away Shirt 25/26</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-away-training-sweatshirt-25-26?variant=54421957345665">
+          <img
+            src="images/VO250923A56021_med.webp"
+            alt="Image of FC Barcelona traing coach sweatshirt" />
+          <h4>
+            FC Barcelona x Kobe Bryant away training coach sweatshirt 25/26
+          </h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-fourth-training-sweatshirt-25-26-players-edition?variant=54853555192193">
+          <img
+            src="images/VO260113A18169_med.webp"
+            alt="Image of FC Barcelona Training sweatshirt Fourth Kit" />
+          <h4>
+            Training sweatshirt FC Barcelona 25/26 Fourth Kit - Player’s Edition
+          </h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/training-pants-away-fc-barcelona-25-26-1?variant=55052955353473">
+          <img
+            src="images/PHSYMG01-2000_c4b251ea-3422-48ee-98d5-47a8a5a65372.webp"
+            alt="Image of away Training Pants for FC Barcelona 25/26" />
+          <h4>Training Pants away FC Barcelona x Kobe Bryant 25/26</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/thermafit-goves-barca-nike?variant=54421959049601">
+          <img
+            src="images/IH1383-010_2.webp"
+            alt="Image of Barcelona Thermafit gloves" />
+          <h4>Thermafit gloves Barça Nike</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/backpack-heritage-barca-nike-away?variant=54421958721921">
+          <img
+            src="images/IM0520-010_U_FA25_EQUIPMENT_PHSFP001.jpg"
+            alt="Image of FC Barcelona away Backpack" />
+          <h4>Backpack heritage Nike away FC Barcelona x Kobe Bryant</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
-        </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
-        </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/backpack-gymsack-barca-nike-away?variant=54421958984065">
+          <img
+            src="images/IM0521-010_U_FA25_EQUIPMENT_PHSFH001.webp"
+            alt="Image of FC Barcelona away Backpack gymsack" />
+          <h4>Backpack gymsack Nike away FC Barcelona x Kobe Bryant</h4>
         </a>
       </div>
-      <h4>Kits</h4>
+      <h3>Kits</h3>
       <div class="grid-container">
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/victory-box-25-26-size-l?variant=55679345099137">
+          <img
+            src="images/1400x1868cajaabierta_d0cf5151-cf42-46a3-aae1-56cb6ffbf930.webp"
+            alt="Image of FC Barcelona limited Laliga Victory Box" />
+          <h4>Size L LaLiga Victory Box 25/26 – Limited Edition</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-home-short-25-26-players-edition?variant=54199117906305">
+          <img
+            src="images/12_ac9b0e6f-52ef-4056-a7df-7ef058ee6563.webp"
+            alt="Image of FC Barcelona home short 25/26" />
+          <h4>FC Barcelona home short 25/26 - Player's Edition</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/mens-fourth-jersey-25-26-fc-barcelona-amb-ucl?variant=54884137730433">
+          <img
+            src="images/4Kit_SergiAlcazar_Ecom_004_1_d376b716-dc3e-4606-ab48-ffe994aea333.webp"
+            alt="Image of FC Barcelona UCL Men's fourth jersey 25/26" />
+          <h4>UCL Men's fourth jersey 25/26 FC Barcelona</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-fourth-tracksuit-25-26?variant=54853554340225">
+          <img
+            src="images/AURORA_FZ1404-431_PHSFM001-2000.webp  "
+            alt="Image of FC Barcelona 25/26 Tracksuit" />
+          <h4>Tracksuit FC Barcelona 25/26 Fourth Kit</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/players-anthem-jacket-home-fc-barcelona-25-26-unisex?variant=54199119577473">
+          <img
+            src="images/VO250915A47916_med.webp"
+            alt="Image of FC Barcelona's Players home anthem jacket 25/26" />
+          <h4>Player's anthem jacket home FC Barcelona 25/26 - Unisex</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/pre-match-home-shirt-fc-barcelona-25-26?variant=54199116923265">
+          <img
+            src="images/VO251020A71879_med.webp"
+            alt="Image of FC Barcelona Pre-Match home shirt 25/26" />
+          <h4>Pre-Match home shirt FC Barcelona 25/26</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/tracksuit-fc-barcelona-25-26?variant=54199114236289">
+          <img
+            src="images/VO251103A79838_med.webp"
+            alt="Image of FC Barcelona Tracksuit 25/26" />
+          <h4>Tracksuit FC Barcelona 25/26</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
-        </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
-        </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/fc-barcelona-home-match-amshirt-25-26-ucl?variant=54363594621313">
+          <img
+            src="images/Mainbannermobile.webp"
+            alt="Image of FC Barcelona UCL Men's home jersey 25/26" />
+          <h4>UCL Men's home jersey 25/26 FC Barcelona - Player's Edition</h4>
         </a>
       </div>
-      <h4>Accessories</h4>
+      <h3>Accessories</h3>
       <div class="grid-container">
         <!--key chains for yamal, rpahina, lewadoski and pedri-->
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/keychain-lamine-yamal?variant=55092619673985">
+          <img
+            src="images/76103_1.webp"
+            alt="Image of a Lamine Yamal Keychain" />
+          <h4>Keychain Lamine Yamal</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/keychain-pedri?variant=55092619608449">
+          <img src="images/76104_1.webp" alt="Image of a Pedri Keychain" />
+          <h4>Keychain Pedri</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/keychain-raphinha?variant=55092619641217">
+          <img src="images/76106_1.webp" alt="Image of Raphinha Keychain" />
+          <h4>Keychain Raphinha</h4>
         </a>
-        <a href="#blog">
-          <img src="img1.jpg" alt="Image 1" />
-          <h4>T</h4>
+        <a
+          class="product-card"
+          href="https://store.fcbarcelona.com/products/keychain-lewandowski?variant=55092619575681">
+          <img src="images/76107_1.webp" alt="Image of Lewandowski Keychain" />
+          <h4>Keychain Lewandowski</h4>
         </a>
       </div>
-      <h2>T-Shirts</h2>
+      <!-- <h2>T-Shirts</h2>
       <div class="grid-container">
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
       </div>
       <h2>Shorts</h2>
       <div class="grid-container">
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-        <a href="#blog">
+        <a class="product-card" href="#blog">
           <img src="img1.jpg" alt="Image 1" />
           <h4>T</h4>
         </a>
-      </div>
+      </div> -->
     </main>
     <hr />
     <footer class="footer">

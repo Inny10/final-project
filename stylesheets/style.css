@@ -303,7 +303,7 @@ section {
   transform: scale(1.09); /* grows */
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5); /* adds a shadow effect */
   /* expanded size */
-  max-height: 900px; /* big enough for all your text */
+  max-height: 9000px; /* big enough for all your text */
 }
 
 .container {
