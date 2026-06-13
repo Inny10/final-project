@@ -33,7 +33,7 @@ p {
 }
 
 h1 {
-  font-size: 3.6rem; /* size of the main heading */
+  font-size: clamp(1.8rem, 2vw, 3.6rem);
   text-transform: uppercase; /* makes all letters uppercase */
   letter-spacing: 0.05em; /* adds space between letters */
   font-family:
