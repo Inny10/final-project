@@ -395,14 +395,17 @@ section {
 
 .footer-bottom-right {
   padding-bottom: 15px;
-  text-align: center;
+}
+
+.footer-bottom-right p {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-links-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  gap: 0.2%; /* spacing between Privacy + Terms */
+  position: absolute;
+  right: 2.5%;
   margin-top: 1px;
   margin-bottom: -5px;
 }
