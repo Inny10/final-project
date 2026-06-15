@@ -1,17 +1,3 @@
-/* display: block = element with a specific id or class takes the full width of its line and starts on a new line */
-
-/* display: inline = element with a specific id or class stays in the same line as other elements, width and height cannot be set */
-
-/* display: inline-block = element with a specific id or class stays in the same line but width and height can be adjusted */
-
-/* display: flex = element with a specific id or class arranges all elements inside it in a row or column layout, making them line up side by side by default */
-
-/* display: none = element with a specific id or class is completely hidden from view and takes up no space */
-
-/* # = ID = Single use */
-
-/* . = Class = multiple use */
-
 /* * means all elements on the page */
 
 * {
@@ -33,7 +19,20 @@ p {
 }
 
 h1 {
-  font-size: clamp(1.8rem, 2vw, 3.6rem);
+  /*  Clamp() lets you set a value that’s responsive but stays within a minimum and maximum range.*/
+  /* clamp(min, preferred, max) */
+  /* 
+    min: The smallest allowed value.
+    preferred: The ideal value.
+    max: The largest allowed value.
+    The browser picks the preferred value but clamps it so it never goes below min or above max. 
+  */
+  /* vw = viewport width */
+  font-size: clamp(
+    1.8rem,
+    2vw,
+    3.6rem
+  ); /* This
   text-transform: uppercase; /* makes all letters uppercase */
   letter-spacing: 0.05em; /* adds space between letters */
   font-family:
@@ -101,7 +100,11 @@ nav {
 hr {
   border: none; /* removes default border */
   height: 7px; /* sets height of the line */
-  background: linear-gradient(to right, #0017aa 50%, #8b003b 50%);
+  background: linear-gradient(
+    to right,
+    #0017aa 50%,
+    #8b003b 50%
+  ); /*Makes the hr have half blue on the left and half red on the right*/
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -157,7 +160,7 @@ section {
   padding-bottom: 2%;
   margin-top: -1%;
   max-height: 8%;
-  overflow: hidden;
+  overflow: hidden; /* Makes any words or letters to big for the box hidden*/
   display: flex;
   flex-direction: column;
   padding-left: 2%;
@@ -326,7 +329,6 @@ section {
   background-color: #181733;
   background: linear-gradient(180deg, #17244d, #181733 50%);
   padding: 0 2%;
-  /* padding: top + bottom 0, left + right 60px */
   font-family: Arial, sans-serif;
 }
 
@@ -400,7 +402,9 @@ section {
 .footer-bottom-right p {
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(
+    -50%
+  ); /* Makes the element move left 50 percent and then backward -50% of the space of the element; This makes it centered*/
 }
 
 .footer-links-row {
@@ -425,7 +429,7 @@ section {
   margin-bottom: 0;
   color: #f5f5f5;
 }
-
+/* This is for responsive for different devices or as the width and height of the webpages changes.*/
 @media (max-width: 800px) {
   /* NAVIGATION FIX */
   nav ul li {
