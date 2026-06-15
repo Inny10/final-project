@@ -325,7 +325,7 @@ section {
   border-bottom-right-radius: 90px; /* rounds the bottom-left corner of the image */
 }
 
-.footer {
+#footer {
   background-color: #181733;
   background: linear-gradient(180deg, #17244d, #181733 50%);
   padding: 0 2%;
@@ -333,7 +333,7 @@ section {
 }
 
 /* TOP SECTION */
-.footer-top {
+#footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -341,7 +341,7 @@ section {
 }
 
 /* LEFT SIDE */
-.footer-left {
+#footer-left {
   width: 65%;
 }
 
@@ -353,20 +353,20 @@ section {
   font-weight: bold; /* text is bolder */
 }
 
-.footer-address {
+#footer-address {
   line-height: 1.5;
   margin-bottom: -60px;
   margin-top: -2%;
   color: #f5f5f5;
 }
 
-.footer-socials i {
+#footer-socials i {
   font-size: 3rem;
   margin-right: 2%;
 }
 
 /* RIGHT SIDE */
-.footer-right {
+#footer-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -374,13 +374,13 @@ section {
   gap: 7%;
 }
 
-.footer-column h4 {
+#footer-column h4 {
   margin-top: 20px;
   font-size: 1.6rem;
   color: #f5f5f5;
 }
 
-.footer-column a {
+#footer-column a {
   display: block;
   text-decoration: none;
   margin-top: 7px;
@@ -389,17 +389,17 @@ section {
   color: #f5f5f5;
 }
 
-.footer-column a:hover {
+#footer-column a:hover {
   text-decoration: underline;
 }
 
 /* BOTTOM SECTION */
 
-.footer-bottom-right {
+#footer-bottom-right {
   padding-bottom: 15px;
 }
 
-.footer-bottom-right p {
+#footer-bottom-right p {
   position: relative;
   left: 50%;
   transform: translateX(
@@ -407,24 +407,24 @@ section {
   ); /* Makes the element move left 50 percent and then backward -50% of the space of the element; This makes it centered*/
 }
 
-.footer-links-row {
+#footer-links-row {
   position: absolute;
   right: 2.5%;
   margin-top: 1px;
   margin-bottom: -5px;
 }
 
-.footer-links-row a {
+#footer-links-row a {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 1.2rem;
 }
 
-.footer-links-row a:hover {
+#footer-links-row a:hover {
   text-decoration: underline;
 }
 
-.footer-bottom-right p {
+#footer-bottom-right p {
   margin-top: 5px;
   margin-bottom: 0;
   color: #f5f5f5;
